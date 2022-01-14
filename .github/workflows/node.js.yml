@@ -24,13 +24,12 @@ jobs:
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v2
       with:
-        node-version: ${{ matrix.node-version }}
-    - run : git pull && git branch
-    - run : git checkout -b gh-pages && git merge master        
-    - run : ls
-    - run: npm ci
-    - run: ls
-    - run: npm run build --prod --prefer-offline
-    - run: git add . && git commit -m "merged and build" && git push
-    
+        node-version: ${{ matrix.node-version }}    
+
+    - run: npm ci && npm run build --prod --prefer-offline
+    - name: Deploy
+      uses: JamesIves/github-pages-deploy-action@4.1.1
+      with:
+        branch: gh-pages # The branch the action should deploy to.
+        folder: docs # The folder the action should deploy
     
