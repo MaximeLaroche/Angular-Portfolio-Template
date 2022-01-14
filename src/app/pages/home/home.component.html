@@ -173,6 +173,12 @@
                               class="card-text"
                               [innerHTML]="project?.description | linkify"
                             ></p>
+                            <a
+                        class="mr-1 rh-skill"
+                        *ngFor="let skill of project?.stack"
+                        >{{ skill }}</a
+                      >
+                      <hr class="m-0 mt-3" />
                           </div>
                         </div>
                       </div>

@@ -9,4 +9,5 @@ export interface Project {
   created_at: string;
   name: string;
   description: string;
+  stack?: string[];
 }
