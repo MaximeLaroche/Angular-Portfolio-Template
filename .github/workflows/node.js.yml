@@ -27,4 +27,5 @@ jobs:
         node-version: ${{ matrix.node-version }}    
 
     - run: npm ci && npm run build --prod --prefer-offline
+    - run: npm start --host 0.0.0.0 &
     
