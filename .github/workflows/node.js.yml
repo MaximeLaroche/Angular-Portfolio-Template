@@ -25,6 +25,7 @@ jobs:
       uses: actions/setup-node@v2
       with:
         node-version: ${{ matrix.node-version }}
+    - run : git branch
     - run : git checkout gh-pages && git merge master        
     - run : ls
     - run: npm ci
