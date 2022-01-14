@@ -28,12 +28,6 @@ jobs:
     - run : ls
     - run: npm ci
     - run: ls
-    - run: npm run build --prod
-    
-    - name: Deploy
-      uses: JamesIves/github-pages-deploy-action@4.1.1
-      with:
-        branch: gh-pages # The branch the action should deploy to.
-        folder: docs # The folder the action should deploy. 
+    - run: npm run build --prod --prefer-offline
     
     
