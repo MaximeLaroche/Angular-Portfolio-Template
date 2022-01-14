@@ -1,31 +1,35 @@
 {
-  "email": "rnldhv91@gmail.com",
-  "location": "Durbanville, Cape Town",
-  "name": "Ronald Hove",
-  "phone": "",
-  "avatar": "assets/media/images/pro_offerzen.jpg",
+  "email": "mlaroche2009@gmail.com",
+  "location": "Montréal, QC, Canada",
+  "name": "Maxime Laroche",
+  "phone": "+1 (514) 348-0345",
+  "avatar": "assets/media/profile pic.jpg",
   "education": [
     {
-      "title": "Bachelor of Science (BSc) in Computer Science and Information Systems",
-      "meta": "University of the Western Cape,  Jan 2014 – Nov 2018"
+      "title": "Bachelor's of Software engineering",
+      "meta": "Polytechnique Montréal"
     }
   ],
-  "about": "I consider myself a value adder. I resolute to being a key asset of objective teams while seeking value from colleagues to add to my strengths. I love computer science and information technology.\n\nI have acquired experience building industry standard, production ready applications from working as a full time software developer and being a full time technology hobbyist.",
+  "about": "I am a very curious person. I enjoy discovering new things, which is why I am interested in data science: It is the field of discovering thinks in all other subjects! <br>I also really enjoy web development",
   "socials": [
     {
-      "name": "rnldhv91@gmail.com",
-      "link": "mailto:rnldhv91@gmail.com",
+      "name": "mlaroche2009@gmail.com",
+      "link": "mailto:mlaroche2009@gmail.com",
       "icon": "fa fa-envelope"
     },
     {
       "name": "Github",
-      "link": "https://github.com/ronald-hove",
+      "link": "https://github.com/MaximeLaroche",
       "icon": "fab fa-github"
     },
     {
       "name": "LinkedIn",
-      "link": "https://www.linkedin.com/in/ronald-hove/",
+      "link": "https://www.linkedin.com/in/laroche-maxime/",
       "icon": "fab fa-linkedin"
+    },
+    { "name": "Gitlab",
+      "link": "https://gitlab.com/MaximeLaroche",
+      "icon": "fab fa-gitlab"
     }
   ]
 }

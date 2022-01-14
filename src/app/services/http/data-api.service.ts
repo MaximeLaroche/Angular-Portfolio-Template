@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { HttpHeaders } from '@angular/common/http';
 
 
 @Injectable({
@@ -27,7 +28,12 @@ export class DataApiService {
     return this.http.get('assets/work-experience.json').toPromise();
   }
 
-  getBase64CV(): Promise<any> {
-    return this.http.get('assets/media/base64/CV.json').toPromise();
+  getCV(): Promise<any> {
+    let headers = new HttpHeaders();
+    headers.append('Access-Control-Allow-Headers', 'Content-Type,application/json');
+    headers.append('Access-Control-Allow-Methods', 'GET');
+    headers.append('Access-Control-Allow-Origin', 'http://localhost:4200');
+
+    return this.http.get('https://github.com/MaximeLaroche/Recherche-Stage/blob/BaseAnglais/CV.pdf', { headers: headers }).toPromise();
   }
 }
