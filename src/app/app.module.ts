@@ -1,7 +1,7 @@
 import { DataApiService } from './services/http/data-api.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 import { AppRoutingModule, routingComponents } from './app-routing.module';
 import { AppComponent } from './app.component';
 
@@ -21,7 +21,8 @@ import { LinkifyPipe } from './pipes/linkify.pipe';
     HttpClientModule
   ],
   providers: [
-    DataApiService
+    DataApiService,
+    {provide: LocationStrategy, useClass: HashLocationStrategy}
   ],
   bootstrap: [AppComponent]
 })
