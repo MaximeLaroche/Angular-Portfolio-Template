@@ -1,6 +1,12 @@
 import { DataApiService } from './../../services/http/data-api.service';
 import { Component, OnInit, HostListener } from '@angular/core';
 
+type language = 'fr' | 'en';
+interface Resume{
+  fr: string,
+  en: string
+}
+
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -14,6 +20,12 @@ export class HomeComponent implements OnInit {
   profile;
 
   showMobileImages = false;
+
+  currentLanguage: language = 'en';
+  resume: Resume = {
+    fr: "https://github.com/MaximeLaroche/Recherche-Stage/raw/master/CV.pdf",
+    en: "https://github.com/MaximeLaroche/Recherche-Stage/raw/BaseAnglais/CV.pdf"
+  }
 
   constructor(
     public dataApi: DataApiService
@@ -48,15 +60,6 @@ export class HomeComponent implements OnInit {
     this.profile = await this.dataApi.getProfile();
     console.log('PROFILE', this.profile);
 
-  }
-
-  async downloadResume(): Promise<void> {
-    const pdf: any = await this.dataApi.getCV();
-    console.log("pdf", pdf);
-    const a = document.createElement('a');
-    a.href = URL.createObjectURL(pdf);
-    a.setAttribute('download', `${this.profile.name} CV.pdf`.replace(/\s/g, ''));
-    a.click();
   }
 
 }

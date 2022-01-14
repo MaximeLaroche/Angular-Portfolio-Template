@@ -30,7 +30,7 @@
                           >{{ social?.name }}</a
                         ><br />
                       </ng-container>
-                      <a href="https://github.com/MaximeLaroche/Recherche-Stage/raw/BaseAnglais/CV.pdf" download="https://github.com/MaximeLaroche/Recherche-Stage/raw/BaseAnglais/CV.pdf"> <button
+                      <a [href]="resume[currentLanguage]" [download]="resume[currentLanguage]"> <button
                         class="btn btn-primary mt-1"
                       >
                         Resume<span class="ml-2"
