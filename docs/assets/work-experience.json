@@ -1,0 +1,21 @@
+{
+  "work": [
+    {
+      "date": "January 2020 - August 2020",
+      "title": "Service engineering | Bombardier",
+      "description": "Design of data collection and analyzing software made to optimize workflows within the company\nIterative Design",
+      "stack": [
+        "VBA",
+        "SalesForce",
+        "SAP"
+      ]
+    },
+    {
+      "date": "January 2018 - June 2018",
+      "title": "Assistant researcher in nodal geometry | Ahuntsic College",
+      "description": "Test design and preparation to either prove or disprove theories elaborated by the researcher\nReport results to the researcher\nPart design using a 3D printer when special part where necessary for testing",
+      "stack": [
+      ]
+    }
+  ]
+}

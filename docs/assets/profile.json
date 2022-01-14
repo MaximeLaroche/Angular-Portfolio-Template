@@ -1,0 +1,35 @@
+{
+  "email": "mlaroche2009@gmail.com",
+  "location": "Montréal, QC, Canada",
+  "name": "Maxime Laroche",
+  "phone": "+1 (514) 348-0345",
+  "avatar": "assets/media/profile pic.jpg",
+  "education": [
+    {
+      "title": "Bachelor's of Software engineering (expected graduation date: June 2023)",
+      "meta": "Polytechnique Montréal"
+    }
+  ],
+  "about": "I am a very curious person. I enjoy discovering new things, which is why I am interested in data science: It is the field of discovering thinks in all other subjects! <br>I also really enjoy web development",
+  "socials": [
+    {
+      "name": "mlaroche2009@gmail.com",
+      "link": "mailto:mlaroche2009@gmail.com",
+      "icon": "fa fa-envelope"
+    },
+    {
+      "name": "Github",
+      "link": "https://github.com/MaximeLaroche",
+      "icon": "fab fa-github"
+    },
+    {
+      "name": "LinkedIn",
+      "link": "https://www.linkedin.com/in/laroche-maxime/",
+      "icon": "fab fa-linkedin"
+    },
+    { "name": "Gitlab",
+      "link": "https://gitlab.com/MaximeLaroche",
+      "icon": "fab fa-gitlab"
+    }
+  ]
+}

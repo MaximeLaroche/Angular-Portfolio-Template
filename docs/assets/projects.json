@@ -1,0 +1,36 @@
+{
+  "projects": [
+    {
+      "preview": "assets/media/projects/portfolio.png",
+      "created_at": "2019-07-20T14:18:15.923+02:00",
+      "name": "This Portfolio Web Application",
+      "description": "Angular portfolio template forked from  https://github.com/ronald-hove/Angular-Portfolio-Template. Adapted it to fit my needs",
+      "stack": [
+        "Angular",
+        "Typescript"
+      ]
+    },
+    {
+      "preview": "assets/media/projects/scrabble.png",
+      "created_at": "2019-07-20T14:18:15.923+02:00",
+      "name": "Online scrabble game",
+      "description": "Collaboration with a team of six to implement an online scrabble game \nAgile development \nAngular used for client application, socket-IO for syncing games, NodeJS for server-side logic and MongoDB for data persistence\n http://maximelaroche.gitlab.io/log2990-201/#/home",
+      "stack":[
+        "Angular",
+        "NodeJS",
+        "MongoDB",
+        "SocketIO",
+        "Typescript"
+      ]
+    },
+    {
+      "preview": "https://www.vectorlogo.zone/logos/java/java-icon.svg",
+      "created_at": "2019-07-20T14:24:00.709+02:00",
+      "name": "TCP File Server",
+      "description": "Design of a cloud local network cloud storage application using java\nMade to share large files between computers on a local network\n https://github.com/MaximeLaroche/INF3405",
+      "stack": [
+        "Java"
+      ]
+    }
+  ]
+}
